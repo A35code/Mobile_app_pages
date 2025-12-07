@@ -1,5 +1,5 @@
 # 1. Login Page
-![Login Page Screenshot](assets/screenshots/login_page.png)
+![Login Page Screenshot](assets/screenshots/login.png)
 
 # 2. Sign Up / Register Page
 ![Register Page Screenshot](assets/screenshots/register.png)
