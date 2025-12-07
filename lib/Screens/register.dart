@@ -16,13 +16,13 @@ class Register extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
 
-              // TOP IMAGE
+
               Center(
                 child: Image.asset(
                   'assets/images/brain_ai.jpg',
                   width: 250,
                   height: 130,
-                  fit: BoxFit.cover,
+                  fit: BoxFit.contain,
                 ),
               ),
 
@@ -91,7 +91,7 @@ class Register extends StatelessWidget {
                 children: [
                   Expanded(
                     flex: 1,
-                    child: _inputField("(+234)"),
+                    child: _inputField("+234"),
                   ),
                   const SizedBox(width: 10),
                   Expanded(
@@ -141,6 +141,7 @@ class Register extends StatelessWidget {
                   Text(
                     "Terms of Service",
                     style: TextStyle(fontSize: 14,
+                    fontWeight: FontWeight.w800,
                     decoration: TextDecoration.underline),
                   )
                 ],
@@ -151,6 +152,7 @@ class Register extends StatelessWidget {
                   Text(
                     "Non-Discriminatory Policy ",
                     style: TextStyle(fontSize: 14,
+                        fontWeight: FontWeight.w800,
                     decoration: TextDecoration.underline),
                   ),
                   Text(
@@ -160,6 +162,7 @@ class Register extends StatelessWidget {
                   Text(
                     "Privacy Policy",
                     style: TextStyle(fontSize: 14,
+                        fontWeight: FontWeight.w800,
                         decoration: TextDecoration.underline),
                   )
                 ],
@@ -170,7 +173,10 @@ class Register extends StatelessWidget {
               const Center(
                   child: Text(
                       "OR", style: 
-                  TextStyle(fontSize: 14)
+                  TextStyle(
+                      fontSize: 14,
+                    fontWeight: FontWeight.w800,
+                  )
                   )
               ),
 

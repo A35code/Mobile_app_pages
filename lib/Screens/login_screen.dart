@@ -25,16 +25,18 @@ class _LoginState extends State<Login> {
 
               // TOP IMAGE
               Center(
-                child: Image.asset(
-                  'assets/images/login.jpeg',
-                  width: 300,
-                  height: 230,
-                  fit: BoxFit.cover,
-                ),
+               child: Container(
+                 width: 130,
+                 height: 130,
+                 decoration: BoxDecoration(
+                   shape: BoxShape.circle,
+                   image: DecorationImage(image: AssetImage("assets/images/login.jpeg"))
+                 ),
+               ),
               ),
 
 
-              const SizedBox(height: 10),
+              const SizedBox(height: 15),
 
               // TITLE
               const Center(
@@ -160,7 +162,11 @@ class _LoginState extends State<Login> {
                   ),
                 ),
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 180),
+
+              Center(
+                child: Text("© 2025 Relink AI Technologies. All rights reserved."),
+              )
             ],
           ),
         ),

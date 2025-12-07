@@ -24,11 +24,13 @@ class _ForgotPasswordState extends State<ForgotPassword> {
 
               // TOP IMAGE
               Center(
-                child: Image.asset(
-                  'assets/images/forget.jpeg',
-                  width: 250,
-                  height: 180,
-                  fit: BoxFit.cover,
+                child: Container(
+                  width: 160,
+                  height: 160,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(image: AssetImage("assets/images/forget.jpeg"))
+                  ),
                 ),
               ),
 
@@ -131,8 +133,6 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                   child: Text(
                     "Return to Login page",
                     style: TextStyle(
-                      decoration:
-                      TextDecoration.underline,
                       color: Color(0xFF1A713A),
                       fontSize: 20,
                     ),
@@ -140,7 +140,11 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 ),
               ),
 
-              const SizedBox(height: 30),
+              const SizedBox(height: 200),
+
+              Center(
+                child: Text("© 2025 Relink AI Technologies. All rights reserved."),
+              )
             ],
           ),
         ),
